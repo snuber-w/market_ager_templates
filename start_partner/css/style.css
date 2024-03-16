@@ -259,6 +259,14 @@ li {
   justify-content: start;
   width: 100%;
 }
+
+.burger__content-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+}
 .burger__link {
   display: flex;
   text-decoration: none;
