@@ -10,7 +10,9 @@ function handleMenuOpen(event) {
   event.preventDefault();
   const burgerMenu = document.querySelector(".burger__menu");
   burgerMenu.style.right = "0";
-  burgerMenu.style.left = "0";
+  burgerMenu.style.left = "0"; 
+
+  document.body.style.overflow = "hidden";
 }
 
 function handleMenuClose(event) {
@@ -18,4 +20,6 @@ function handleMenuClose(event) {
   const burgerMenu = document.querySelector(".burger__menu");
   burgerMenu.style.right = "200vw";
   burgerMenu.style.left = "-150vw";
+
+  document.body.style.overflow = "auto";
 }
