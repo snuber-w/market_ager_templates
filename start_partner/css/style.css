@@ -1426,7 +1426,7 @@ button {
     rgba(0,0,0,0) calc(50% + 1px)
     );
 
-    padding: 0 48px;
+    padding: 0 24px;
     gap: 48px;
     flex-direction: row;
     justify-content: space-between;
