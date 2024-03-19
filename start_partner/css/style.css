@@ -1701,10 +1701,7 @@ button {
 }
 
 .panel {
-  /* display: none; */
   max-height: 0;
-  overflow: hidden;
-  opacity: 0;
 
   transition: .3s ease-in-out;
 }
