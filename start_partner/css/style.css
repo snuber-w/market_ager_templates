@@ -192,6 +192,11 @@ button {
   background-color: var(--color-black)
 }
 
+.button-white {
+  color: var(--color-black);
+  background-color: var(--color-white)
+}
+
 .button-transparent {
   color: var(--color-black);
   background-color: #ffffff11
@@ -1726,4 +1731,131 @@ button {
   .panel__item {
     padding: 24px 36px;
   }
+}
+
+.application {
+  padding: 80px 0 80px;
+  background-color: var(--brand-color);
+}
+
+@media (min-width:48rem) {
+  .application {
+    padding: 120px 0 150px;
+  }
+}
+
+@media (min-width:87.5rem) {
+  .application {
+    padding: 100px 0 150px;
+  }
+}
+
+.application__title {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+@media (min-width:48rem) {
+  .application__title {
+    font-size: 76px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width:87.5rem) {
+  .application__title {
+    font-size: 96px;
+    margin-bottom: 48px;
+  }
+}
+
+.application__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width:48rem) {
+  .application__form {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px 16px;
+    grid-template-areas: 
+      "i1 i1 i1 i2 i2 i2"
+      "i3 i3 i4 i4 b b";
+
+    max-width: 930px;
+  }
+}
+
+@media (min-width:87.5rem) {
+  .application__form {
+    max-width: 1200px;  
+  }
+}
+
+.grid-input1 {
+  grid-area: i1;
+}
+.grid-input2 {
+  grid-area: i2;    
+}
+.grid-input3 {  
+  grid-area: i3;    
+}
+.grid-input4 {        
+  grid-area: i4;    
+}
+.grid-button {
+  grid-area: b; 
+}
+
+.application__input {
+  width: 100%;
+  height: 51px;
+  border: 1px solid var(--color-white);
+  background-color: transparent;
+  color: var(--color-white);
+  font-size: 16px;
+  padding: 16px 24px;
+  border-radius: 36px;
+}
+
+.application__input::placeholder {
+  color: var(--color-white);
+  opacity: 0.6;
+}
+
+.application__input:focus-within {
+  outline: none;
+}
+
+.application__input--special {
+  background-color: rgba(255, 255, 255, 0.20);
+  color: var(--color-white);
+  border-color: transparent;
+}
+
+.application__input--special::placeholder {
+  color: var(--color-white);
+  opacity: 1;
+}
+
+.application__button {
+  width: 100%;
+  height: 51px;
+  border: 1px solid transparent;
+  border-radius: 36px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 400;
 }
