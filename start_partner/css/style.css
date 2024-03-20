@@ -1702,6 +1702,7 @@ button {
 
 .panel {
   max-height: 0;
+  overflow: hidden;
 
   transition: .3s ease-in-out;
 }
